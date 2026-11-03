@@ -1,0 +1,12 @@
+schema_version: "1.1"
+name: finds-seeded-bugs-rejects-decoys
+expected_outcome: |
+  The report confirms the seeded bugs and does not confirm the decoys. Seeded bugs:
+  pricing.line_total uses > where docs/rules.md says 10 or more; refunds.refund ignores earlier refunds;
+  api.get_order has no ownership check; store.create_order leaves a partial order with no rollback on the
+  shared connection; worker.charge_with_retry retries a possibly applied charge with no idempotency key;
+  inventory.reserve checks and writes stock across an await; inventory.get_price never invalidates its cache.
+  Decoys: tax rounding, average_line division, the f-string ORDER BY, the metrics except-pass, vendor eval,
+  generated code.
+context:
+  scaffold_script: place-files.sh

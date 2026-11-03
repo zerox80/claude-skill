@@ -1,0 +1,7 @@
+schema_version: "1.1"
+name: clean-repo-reports-no-findings
+expected_outcome: |
+  The small slugify library has no P0-P2 bug. The report contains no confirmed findings, states the
+  required no-findings sentence, and limits the claim to the reviewed scope.
+context:
+  scaffold_script: place-files.sh
