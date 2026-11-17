@@ -1,0 +1,14 @@
+{
+  "name": "claude-skill",
+  "owner": {
+    "name": "zerox80"
+  },
+  "description": "Claude Code plugins by zerox80.",
+  "plugins": [
+    {
+      "name": "security-audit",
+      "source": "./security-audit",
+      "description": "Multi-agent security review (repo map -> 3-5 reviewers -> 3 validators), P0/P1/P2 only."
+    }
+  ]
+}
