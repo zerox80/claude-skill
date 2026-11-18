@@ -8,7 +8,7 @@
     {
       "name": "security-audit",
       "source": "./security-audit",
-      "description": "Multi-agent security review (repo map -> 3-5 reviewers -> 3 validators), P0/P1/P2 only."
+      "description": "Multi-agent security review (repo map -> 10 reviewers, max 5 parallel -> 3 validators), P0/P1/P2 only."
     }
   ]
 }

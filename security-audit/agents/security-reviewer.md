@@ -1,6 +1,6 @@
 ---
 name: security-reviewer
-description: Read-only security reviewer for the security-audit plugin. Reviews the whole repository through an assigned lens and reports only Critical/High/Medium (P0/P1/P2) vulnerabilities with concrete evidence. Dispatched in parallel (3-5 instances) by the security-audit:audit skill.
+description: Read-only security reviewer for the security-audit plugin. Reviews the whole repository through an assigned lens and reports only Critical/High/Medium (P0/P1/P2) vulnerabilities with concrete evidence. Dispatched in parallel (up to 10 instances, max. 5 at a time) by the security-audit:audit skill.
 tools: Read, Grep, Glob, Bash
 model: inherit
 ---
